@@ -1,0 +1,44 @@
+📋 Test Rules
+
+No hints — I won't give you any clues unless you're completely stuck
+No partial reviews — submit the complete script, I review it all at once
+3 tasks — complete all 3 independently
+Time yourself — see how long each takes you
+
+
+🎫 Test Task #1 — Password Generator
+
+Write a script called password_gen.sh that generates a random password.
+
+Requirements:
+
+Ask the user how long they want the password to be
+Generate a random password of that length using letters and numbers
+Display the generated password
+Ask the user if they want to generate another one — if yes, repeat, if no, exit cleanly
+
+
+🎫 Test Task #2 — System User Report
+
+Write a script called user_report.sh that generates a report of all users on the system.
+
+Requirements:
+
+Read all users from /etc/passwd
+Only show users with a user ID above 999 (these are real human users, not system users)
+Display each username and their home directory
+Count and display the total number of such users at the end
+Save the report to /tmp/user_report.txt
+
+
+🎫 Test Task #3 — Auto Backup with Rotation
+
+Write a script called smart_backup.sh that backs up a folder and manages old backups.
+
+Requirements:
+
+Back up the ~/bash-scripting folder to /tmp/smart_backups/
+Name the backup with date and time: backup_2026-03-19_14-30-00.tar.gz
+After creating the backup, count how many backups exist
+If there are more than 3 backups, delete the oldest one automatically
+Display all current backups at the end
